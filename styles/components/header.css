@@ -83,7 +83,20 @@
     }
 }
 
-/*@media (min-width: 1280px) { } */
+@media (min-width: 1280px) {
+    .header__link {
+        font-size: var(--size-l);
+    }
+
+    .header__sun {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .header__resume {
+        font-size: var(--size-l);
+    }
+} 
 
 /*@media (min-width: 1536px) { } */
 
