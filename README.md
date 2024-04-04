@@ -1,2 +1,2 @@
 # Personal Portfolio
-### Using HTML, CSS, and JavaScript Vite and Vercel
+### Using HTML, CSS, JavaScript, Vite and Vercel for deployment.
