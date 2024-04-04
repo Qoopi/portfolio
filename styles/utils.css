@@ -2,7 +2,6 @@
     display: inline-block;
     font-weight: 600;
     text-decoration: none;
-    letter-spacing: -0.05em;
     background-color: var(--clr-rose);
     color: #f1f5f9;
     padding: 0.5em 1em;
@@ -18,6 +17,12 @@
     box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
     0 10px 10px rgba(225, 29, 72, 0.22),
     0 0 100px -10px var(--clr-rose);
+}
+
+.icon {
+    color: var(--clr-light);
+    margin: 0 0.5em;
+    transition: color 0.3s;
 }
 
 .container {
