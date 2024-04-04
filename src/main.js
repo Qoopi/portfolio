@@ -8,5 +8,7 @@ import '../styles/components/footer.css'
 import '../styles/utils.css'
 
 import mobileNav from '../src/ulils/mobile-nav.js'
+import darkMode from '../src/ulils/dark-mode.js'
 
+darkMode();
 mobileNav();
