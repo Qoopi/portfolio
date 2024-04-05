@@ -11,6 +11,9 @@
 }
 
 .skills__info-section {
+    background-color: var(--clr-text-backgroud);
+    border-radius: 8px;
+    padding: 0.6rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -27,17 +30,104 @@
 }
 
 .skills__description {
-    background-color: rgba(30, 41, 59, 0.2);
-    border-radius: 5px;
-    padding: 0.5rem;
     max-width: 80ch;
     font-size: var(--size-xs);
     color: var(--clr-slate600);
 }
 
+.skills__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .skills__icon-section {
     display: none;
-    border: 1px solid var(--clr-slate600);
+}
+
+.skills__svg-gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas:
+      'dotnet dotnet dotnet java java js js docker docker' 
+      'dotnet dotnet dotnet java java js js docker docker'
+      'dotnet dotnet dotnet kotlin selenium  ts react mongodb redis'
+      'git github gitlab playwright appium html css . .';
+    place-items: center;
+}
+
+.skills__svg-grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+.dotnet {
+    grid-area: dotnet;
+}
+
+.java {
+    grid-area: java;
+}
+
+.js {
+    grid-area: js;
+}
+
+.ts {
+    grid-area: ts;
+}
+
+.react {
+    grid-area: react;
+}
+
+.selenium {
+    grid-area: selenium;
+}
+
+.playwright {
+    grid-area: playwright;
+}
+
+.docker {
+    grid-area: docker;
+}
+
+.github {
+    grid-area: github;
+}
+
+.gitlab {
+    grid-area: gitlab;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.kotlin {
+    grid-area: kotlin;
+}
+
+.mongodb {
+    grid-area: mongodb;
+}
+
+.redis {
+    grid-area: redis;
+}
+
+.git {
+    grid-area: git;
+}
+
+.appium {
+    grid-area: appium;
 }
 
 @media (min-width: 475px) {
@@ -63,68 +153,34 @@
 }
 
 @media (min-width: 640px) {
-    .skills__icon-section {
-        display: block;
-    }
-
-    .skills__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        'content1 content1 image1'
-        'image2 content2 content2'
-        'content3 content3 image3'
-        'image4 content4 content4';
-        gap: 1rem;
-    }
-
-    .content1 {
-        grid-area: content1;
-    }
-
-    .content2 {
-        grid-area: content2;
-    }
-
-    .content3 {
-        grid-area: content3;
-    }
-
-    .content4 {
-        grid-area: content4;
-    }
-
-    .image1 {
-        grid-area: image1;
-    }
-
-    .image2 {
-        grid-area: image2;
-    }
-
-    .image3 {
-        grid-area: image3;
-    }
-
-    .image4 {
-        grid-area: image4;
-    }
-    
     .skills__title {
         font-size: var(--size-4xl);
     }
-    
+
     .skills__subtitle {
         font-size: var(--size-l);
     }
-    
+
     .skills__description {
         font-size: var(--size-l);
     }
 }
 
 @media (min-width: 768px) {
+    .skills__svg-gird {
+       display: none;
+    }
+    .skills__icon-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -134,6 +190,7 @@
 
     .skills__description {
         font-size: var(--size-l);
+        line-height: 1.4em;
     }
 
     .skills__subtitle {
@@ -147,7 +204,7 @@
     }
 
     .skills__description {
-        max-width: 100ch;
+        max-width: 150ch;
         font-size: var(--size-xl);
     }
 

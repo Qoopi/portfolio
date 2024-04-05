@@ -1,5 +1,6 @@
 :root {
   --clr-backgroud: #020617;
+  --clr-text-backgroud: rgba(30, 41, 59, 0.2);
   --clr-dark: #070a13;
   --clr-light: #f1f5f9;
   --clr-slate400: #94a3b8;
@@ -40,6 +41,7 @@ html {
 }
 
 .light-mode {
+  --clr-text-backgroud: rgba(30, 41, 59, 0.05);
   --clr-backgroud: #e2e8f0; 
   --clr-light: #070a13;
   --clr-dark: #f1f5f9;

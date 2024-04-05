@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-end;
     gap: 1rem;
 }
 
@@ -23,6 +23,9 @@
 }
 
 .about__description {
+    background-color: var(--clr-text-backgroud);
+    border-radius: 8px;
+    padding: 0.5rem;
     max-width: 60ch;
     font-size: var(--size-s);
     color: var(--clr-slate600);
@@ -37,90 +40,9 @@
     color: var(--clr-slate400);
 }
 
-.about__svg-gird {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 50px 50px;
-    grid-template-areas:
-      'dotnet dotnet dotnet java java js js docker docker' 
-      'dotnet dotnet dotnet java java js js docker docker'
-      'dotnet dotnet dotnet kotlin selenium  ts react mongodb redis'
-      'git github gitlab playwright appium html css . .';
-    place-items: center;
+.about__photo {
+    border-radius: 15px;
 }
-
-.about__svg-grid-item {
-    width: 100%;
-    height: 100%;
-}
-
-.dotnet {
-    grid-area: dotnet;
-}
-
-.java {
-    grid-area: java;
-}
-
-.js {
-    grid-area: js;
-}
-
-.ts {
-    grid-area: ts;
-}
-
-.react {
-    grid-area: react;
-}
-
-.selenium {
-    grid-area: selenium;
-}
-
-.playwright {
-    grid-area: playwright;
-}
-
-.docker {
-    grid-area: docker;
-}
-
-.github {
-    grid-area: github;
-}
-
-.gitlab {
-    grid-area: gitlab;
-}
-
-.html {
-    grid-area: html;
-}
-
-.css {
-    grid-area: css;
-}
-
-.kotlin {
-    grid-area: kotlin;
-}
-
-.mongodb {
-    grid-area: mongodb;
-}
-
-.redis {
-    grid-area: redis;
-}
-
-.git {
-    grid-area: git;
-}
-.appium {
-    grid-area: appium;
-}
-
 
 @media (min-width: 475px) {
     .about {
@@ -149,15 +71,26 @@
     }
 }
 
-/*@media (min-width: 640px) {  }*/
+@media (min-width: 640px) {
+    .about__description {
+        max-width: 80ch;
+    }
+}
 
-/*@media (min-width: 768px) { }*/
+@media (min-width: 768px) {
+    .about__description {
+        max-width: 100ch;
+    }
+}
 
 @media (min-width: 1024px) {
+    .about__photo {
+        max-width: 40%;
+    }
     .about {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .about__title {
@@ -189,6 +122,7 @@
 
     .about__description {
         font-size: var(--size-xl);
+        line-height: 1.4em;
     }
 
     .about__subtitle {

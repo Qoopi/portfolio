@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:5178/#about -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module" src="./Oleh Kutafin_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5178/vite.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Oleh Kutafin_files/css2" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleh Kutafin</title>
+<style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/normalize.css">/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+    font-family: system-ui,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+    line-height: 1.15; /* 1. Correct the line height in all browsers. */
+    -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+    -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+    tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+    margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+    height: 0; /* 1 */
+    color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+    text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+    font-family: ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    'Liberation Mono',
+    Menlo,
+    monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+    font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+    text-indent: 0; /* 1 */
+    border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+    padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+    display: list-item;
+}</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/style.css">:root {
+  --clr-backgroud: #020617;
+  --clr-text-backgroud: rgba(30, 41, 59, 0.2);
+  --clr-dark: #070a13;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate700: #334155;
+  --clr-slate800: #1e293b;
+  --clr-rose: #e11d48;
+  --clr-indigo: #4f46e5;
+
+  /*  rose rgb(225, 29, 72) */
+  /*  indigo rgb(79, 20, 229) */
+
+  /*  sizes  */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-s: 0.875rem;
+  --size-base: 1em;
+  --size-l: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em * 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light-mode {
+  --clr-text-backgroud: rgba(30, 41, 59, 0.05);
+  --clr-backgroud: #e2e8f0; 
+  --clr-light: #070a13;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate700: #1e293b;
+  --clr-slate800: #1e293b;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--clr-backgroud);
+  color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: var(--clr-rose);
+}
+
+strong {
+  color: var(--clr-indigo);
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-rose);
+  outline: 1px solid var(--clr-rose);
+}</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/components/header.css">.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 9999;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__bars {
+    display: block;
+    color: var(--clr-light);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+}
+
+/*@media (min-width: 475px) {*/
+/*}*/
+
+/*@media (min-width: 640px) {*/
+/*}*/
+
+@media (min-width: 768px) {
+    .header__menu {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    .header__link {
+        font-size: var(--size-xs);
+        color: var(--clr-slate600);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s
+    }
+
+    .header__link:hover {
+        color: var(--clr-rose);
+    }
+
+    .header__line {
+        border: 1px solid var(--clr-slate600);
+        padding-top: 1.5em;
+    }
+
+    .header__sun {
+        display: block;
+        color: var(--clr-slate600);
+        width: var(--size-base);
+        height: var(--size-base);
+    }
+
+    .header__resume {
+        font-size: var(--size-xs);
+    }
+
+    .header__bars {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__link {
+        font-size: var(--size-s);
+    }
+
+    .header__sun {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .header__resume {
+        font-size: var(--size-s);
+    }
+}
+
+@media (min-width: 1280px) {
+    .header__link {
+        font-size: var(--size-l);
+    }
+
+    .header__sun {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .header__resume {
+        font-size: var(--size-l);
+    }
+} 
+
+/*@media (min-width: 1536px) { } */
+
+/*@media (min-width: 1280px) { } */
+
+/*@media (min-width: 1536px) { } */</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/components/mobile-nav.css">.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-backgroud);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mobile-nav__menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-nav__link {
+  font-size: var(--size-s);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--clr-slate600);
+  letter-spacing: -0.05em;
+  transition: color 0.3s;
+}
+
+.mobile-nav__link:hover {
+  color: var(--clr-rose);
+}
+
+.mobile-nav__link-line {
+  border: 1px solid var(--clr-slate800);
+  padding-right: 1.5em;
+}
+
+.mobile-nav__sun {
+  display: block;
+  width: var(--size-xl);
+  height: var(--size-xl);
+  color: var(--clr-slate600);
+}
+
+.mobile-nav__btn {
+  font-size: var(--size-s);
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    position: relative;
+  }
+
+  .mobile-nav__menu {
+    display: none;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/components/home.css">.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.home__img {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.home__subtitle {
+    color: var(--clr-slate600);
+    font-size: var(--size-base);
+    line-height: 0.9;
+}
+
+.home__title {
+    color: var(--clr-slate400);
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+}
+
+.home__description {
+    max-width: 60ch;
+    font-size: var(--size-s);
+    color: var(--clr-slate600);
+}
+
+.hoe__btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 3rem;
+}
+
+.home__btn {
+    text-transform: capitalize;
+    font-size: var(--size-s);
+    width: 110px;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .hero {
+        gap: 1.5rem;
+    }
+
+    .home__img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .home__subtitle {
+        font-size: var(--size-l);
+    }
+
+    .home__title {
+        font-size: var(--size-5xl);
+    }
+
+    .home__description {
+        font-size: var(--size-base);
+    }
+
+    .home__btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .home__img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .home__img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .home__subtitle {
+        font-size: var(--size-2xl);
+    }
+
+    .home__title {
+        font-size: var(--size-7xl);
+    }
+
+    .home__description {
+        font-size: var(--size-l);
+    }
+
+    .home__btn {
+        font-size: var(--size-l);
+        width: 140px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .hero {
+        gap: 2rem;
+    }
+
+    .home__img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .home__subtitle {
+        font-size: var(--size-4xl);
+    }
+
+    .home__title {
+        font-size: var(--size-9xl);
+    }
+
+    .home__description {
+        font-size: var(--size-xl);
+    }
+
+    .home__btn {
+        font-size: var(--size-xl);
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/components/about.css">.about {
+    border: 1px solid var(--clr-rose);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.about__info {
+    border: 1px solid var(--clr-rose);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+}
+
+.about__description {
+    background-color: var(--clr-text-backgroud);
+    border-radius: 8px;
+    padding: 0.5rem;
+    max-width: 60ch;
+    font-size: var(--size-s);
+    color: var(--clr-slate600);
+}
+
+.about__hr {
+    border-color: var(--clr-slate800);
+}
+
+.about__subtitle {
+    font-size: var(--size-s);
+    color: var(--clr-slate400);
+}
+
+.about__photo {
+    border-radius: 15px;
+}
+
+@media (min-width: 475px) {
+    .about {
+        gap: 1.5rem;
+    }
+
+    .about__info {
+        gap: 1.5rem;
+    }
+
+    .about__title {
+        font-size: var(--size-3xl);
+    }
+
+    .about__description {
+        font-size: var(--size-base);
+    }
+
+    .about__subtitle {
+        font-size: var(--size-base);
+    }
+
+
+    .about__ul__item {
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 640px) {
+    .about__description {
+        max-width: 80ch;
+    }
+}
+
+@media (min-width: 768px) {
+    .about__description {
+        max-width: 100ch;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about__photo {
+        max-width: 50%;
+    }
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+
+    .about__description {
+        font-size: var(--size-l);
+    }
+
+    .about__subtitle {
+        font-size: var(--size-l);
+    }
+
+
+    .about__ul__item {
+        font-size: var(--size-l);
+    }
+}
+
+@media (min-width: 1280px) {
+    .about__info {
+        gap: 2rem;
+    }
+
+    .about__title {
+        font-size: var(--size-5xl);
+    }
+
+    .about__description {
+        font-size: var(--size-xl);
+        line-height: 1.4em;
+    }
+
+    .about__subtitle {
+        font-size: var(--size-xl);
+    }
+
+
+    .about__ul__item {
+        font-size: var(--size-xl);
+    }
+
+    .about__img {
+        width: 30.75rem;
+    }
+}
+
+/*@media (min-width: 1536px) { }*/</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/components/skills.css">.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills__info-section {
+    background-color: var(--clr-text-backgroud);
+    border-radius: 8px;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skills__title {
+    font-size: var(--size-2xl);
+    margin-bottom: 1rem;
+}
+
+.skills__subtitle {
+    font-size: var(--size-base);
+    color: var(--clr-slate400);
+}
+
+.skills__description {
+    max-width: 80ch;
+    font-size: var(--size-xs);
+    color: var(--clr-slate600);
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.skills__icon-section {
+    display: none;
+}
+
+.skills__svg-gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas:
+      'dotnet dotnet dotnet java java js js docker docker' 
+      'dotnet dotnet dotnet java java js js docker docker'
+      'dotnet dotnet dotnet kotlin selenium  ts react mongodb redis'
+      'git github gitlab playwright appium html css . .';
+    place-items: center;
+}
+
+.skills__svg-grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+.dotnet {
+    grid-area: dotnet;
+}
+
+.java {
+    grid-area: java;
+}
+
+.js {
+    grid-area: js;
+}
+
+.ts {
+    grid-area: ts;
+}
+
+.react {
+    grid-area: react;
+}
+
+.selenium {
+    grid-area: selenium;
+}
+
+.playwright {
+    grid-area: playwright;
+}
+
+.docker {
+    grid-area: docker;
+}
+
+.github {
+    grid-area: github;
+}
+
+.gitlab {
+    grid-area: gitlab;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.kotlin {
+    grid-area: kotlin;
+}
+
+.mongodb {
+    grid-area: mongodb;
+}
+
+.redis {
+    grid-area: redis;
+}
+
+.git {
+    grid-area: git;
+}
+
+.appium {
+    grid-area: appium;
+}
+
+@media (min-width: 475px) {
+    .skills {
+        gap: 1.5rem;
+    }
+
+    .skills__info-section {
+        gap: 1rem;
+    }
+
+    .skills__title {
+        font-size: var(--size-2xl);
+    }
+
+    .skills__description {
+        font-size: var(--size-s);
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-s);
+    }
+}
+
+@media (min-width: 640px) {
+    .skills__title {
+        font-size: var(--size-4xl);
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-l);
+    }
+
+    .skills__description {
+        font-size: var(--size-l);
+    }
+}
+
+@media (min-width: 768px) {
+    .skills__svg-gird {
+       display: none;
+    }
+    .skills__icon-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills__title {
+        font-size: var(--size-4xl);
+    }
+
+    .skills__description {
+        font-size: var(--size-l);
+        line-height: 1.4em;
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-l);
+    }
+}
+
+@media (min-width: 1280px) {
+    .skills__title {
+        font-size: var(--size-5xl);
+    }
+
+    .skills__description {
+        max-width: 150ch;
+        font-size: var(--size-xl);
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-xl);
+    }
+}
+
+/*@media (min-width: 1536px) { }*/</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/components/footer.css">.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-xxs);
+    margin-bottom: 1rem;
+}
+.footer__title {
+    font-size: var(--size-xs);
+    font-weight: 400;
+    color: var(--clr-slate600);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    user-select: none;
+}
+
+.footer__public-profiles {
+    display: flex;
+    justify-content: center;
+    font-size: var(--size-xs);
+    color: var(--clr-slate400);
+}</style><style type="text/css" data-vite-dev-id="/Users/okutafin/Projects/js/portfolio/styles/utils.css">.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--clr-rose);
+    color: #f1f5f9;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
+    0 6px 6px rgba(225, 29, 72, 0.5),
+    0 0 100px -10px var(--clr-rose);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
+    0 10px 10px rgba(225, 29, 72, 0.22),
+    0 0 100px -10px var(--clr-rose);
+}
+
+.icon {
+    color: var(--clr-light);
+    margin: 0 0.5em;
+    transition: color 0.3s;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.section {
+    margin-top: 10rem;
+}
+
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+
+/*@media (min-width: 475px) { }*/
+
+/*@media (min-width: 640px) { }*/
+
+/*@media (min-width: 768px) { }*/
+
+/*@media (min-width: 1024px) { }*/
+
+/*@media (min-width: 1280px) { }*/
+
+/*@media (min-width: 1536px) { }*/
+</style></head>
+<body data-new-gr-c-s-check-loaded="14.1166.0" data-gr-ext-installed="">
+<header class="header container">
+    <nav>
+        <ul class="header__menu">
+            <li>
+                <a class="header__link" href="http://localhost:5178/#home">Home</a>
+            </li>
+            <li>
+                <a class="header__link" href="http://localhost:5178/#about">About</a>
+            </li>
+            <li>
+                <a class="header__link" href="http://localhost:5178/#contact">Contact</a>
+            </li>
+            <li class="header__line"></li>
+            <li>
+                <button id="theme-toggle" class="header__sun">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <button class="header__bars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </nav>
+</header>
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+    <nav>
+        <ul class="mobile-nav__menu">
+            <li>
+                <a class="mobile-nav__link" href="http://localhost:5178/#home">Home</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="http://localhost:5178/#about">About</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="http://localhost:5178/#contact">Contact</a>
+            </li>
+            <li class="mobile-nav__link-line"></li>
+            <li>
+                <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- End of Mobile Navigation -->
+<section id="home" class="home container section">
+    <img class="home__img" src="./Oleh Kutafin_files/my_pic.png" alt="Profile picture">
+    <h2 class="home__subtitle">Hi, I'm Oleh 👋</h2>
+    <h1 class="home__title">
+        SOFTWARE <br>
+        ENGINEER
+    </h1>
+    <p class="home__description">
+        Highly experienced <strong>Software Engineer in Test</strong> with <strong>eight years</strong>
+        of proven <strong>qualification</strong>in
+        developing <strong>frameworks</strong>, <strong>libraries</strong>,
+        and <strong>tools</strong> for test automation.
+    </p>
+    <div class="hoe__btn-container">
+        <a class="home__btn btn" href="https://docs.google.com/document/d/1-WgtwxoBF-QhMBo-TvVFbgU8A0yIUrje9Hxocf9LlJo/edit?usp=sharing">
+            Resume</a>
+        <a class="home__btn btn" href="mailto:kutafin.o.v@gmail.com">Reach out</a>
+    </div>
+
+</section>
+<section id="about" class="about container section">
+    <div class="about__info">
+        <h2 class="about__title">About Me</h2>
+        <p class="about__description">
+            I'm a <strong>Software Engineer in Test</strong> with a passion for <strong>quality</strong>.
+            I have a <strong>strong</strong> background in <strong>test automation</strong> and <strong>software
+            development</strong>.
+            I have experience in <strong>creating</strong> and <strong>maintaining</strong> test automation frameworks,
+            writing <strong>test cases</strong>, and <strong>testing</strong> web applications.
+            I'm also familiar with the principles of <strong>software development</strong> and have experience in
+            writing code in <strong>C#</strong>, <strong>Java</strong>, and <strong>JavaScript</strong>.
+            I'm always open to new knowledge and ready to learn new technologies.
+        </p>
+    </div>
+    <img class="about__photo" src="./Oleh Kutafin_files/my_pic2.jpeg" alt="Oleh Kutafin photo 2">
+</section>
+<section id="skills" class="skills container section">
+    <h2 class="skills__title">Skills</h2>
+    <div class="skills__info-section">
+        <h3 class="skills__subtitle"> What can I do?</h3>
+        <p class="skills__description">
+            I excel in <strong>Software Quality Assurance</strong> and <strong>Test Automation</strong>,
+            areas where my skills have been honed through extensive practice and experience.
+            I have worked with all types of software testing - Unit, Integration, End-to-End, API, Web, Mobile,
+            Performance.<br>
+            I can build pipelines on <strong>CI/CD</strong> where all tests are included and running.
+            I know how to <strong>develop back-end</strong> apps and can do the <strong>front-end</strong> from now
+            on.<br>
+            I'm not pretending to be the best of the best, but <a>I definitely know how software can meet the
+            requirements</a>.
+        </p>
+    </div>
+    <div class="skills__container">
+        <div class="skills__info-section content1">
+            <h3 class="skills__subtitle">Programming languages:</h3>
+            <p class="skills__description">
+                <strong>C#</strong>, <strong>Java</strong>, JS, HTMl, CSS.
+                <br>
+                <a>Now studying</a> - React, Python, Swift, Kotlin.
+            </p>
+            <div class="skills__icon-section">
+                <img class="icon" src="./Oleh Kutafin_files/see_sharp.svg" alt="see sharp">
+                <img class="icon" src="./Oleh Kutafin_files/java.svg" alt="java">
+                <img class="icon" src="./Oleh Kutafin_files/java-script.svg" alt="js">
+                <img class="icon" src="./Oleh Kutafin_files/html.svg" alt="html">
+                <img class="icon" src="./Oleh Kutafin_files/css.svg" alt="css">
+                <img class="icon" src="./Oleh Kutafin_files/react.svg" alt="css">
+                <img class="icon" src="./Oleh Kutafin_files/kotlin.svg" alt="css">
+                <img class="icon" src="./Oleh Kutafin_files/swift.svg" alt="css">
+            </div>
+        </div>
+        <div class="skills__info-section content2">
+            <h3 class="skills__subtitle">Tech-stacks I worked with:</h3>
+            <p class="skills__description">
+                <strong>.net C#</strong> - NUnit, Xunit, NBomber, Selenium, Selenoid, Playwright, RestSharp, Moq,
+                FluentAssertions.<br>
+            </p>
+            <p class="skills__description">
+                <strong>Java</strong> - JUnit, TestNG, RestAssured, Selenium, Selenoid, Selenide, Playwright, Appium.
+                <br>
+            </p>
+            <p class="skills__description">
+                <strong>JS</strong> - HTML, CSS, React is in progress. <br>
+            </p>
+            <div class="skills__icon-section">
+                <img class="icon" src="./Oleh Kutafin_files/see_sharp.svg" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/xunit.png" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/nUnit.png" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/java.svg" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/junit.png" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/selenium.svg" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/appium-svgrepo-com.svg" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/playwright.svg" alt="selenium">
+            </div>
+        </div>
+        <div class="skills__info-section">
+            <h3 class="skills__subtitle"> Tools:</h3>
+            <p class="skills__description">
+                <strong>Git</strong>, GitHub, <strong>GitLab</strong>, TeamCity,
+                <strong>Docker</strong>, <strong>docker-compose</strong>,
+                Kubernetes, Vite, Vercel, Redis, <strong>MongoDb</strong>,
+                RabbitMQ, <strong>Apache Kafka</strong>, Jira, Confluence, <strong>Postman</strong>,
+                <strong>Swagger</strong>, Slack,
+            </p>
+            <div class="skills__icon-section">
+                <img class="icon" src="./Oleh Kutafin_files/docker.svg" alt="selenium">
+                <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"></path>
+                </svg>
+                <img class="icon" src="./Oleh Kutafin_files/gitlab.svg" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/mongodb.svg" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/redis.svg" alt="selenium">
+                <img class="icon" src="./Oleh Kutafin_files/rabbitmq.svg" alt="selenium">
+            </div>
+        </div>
+    </div>
+    <div class="skills__svg-gird">
+        <div class="skills__svg-grid-item dotnet">
+            <img class="skills__svg-grid-item" src="./Oleh Kutafin_files/see_sharp(1).svg" alt="dotnet">
+        </div>
+        <div class="skills__svg-grid-item java">
+            <img class="skills__svg-grid-item" src="./Oleh Kutafin_files/java.svg" alt="java">
+        </div>
+        <div class="skills__svg-grid-item js">
+            <img class="skills__svg-grid-item" src="./Oleh Kutafin_files/java-script(1).svg" alt="js">
+        </div>
+        <div class="skills__svg-grid-item ts">
+            <img class="skills__svg-grid-item" src="./Oleh Kutafin_files/type-script.svg" alt="ts">
+        </div>
+        <div class="skills__svg-grid-item react">
+            <img class="skills__svg-grid-item" src="./Oleh Kutafin_files/react(1).svg" alt="react">
+        </div>
+        <div class="skills__svg-grid-item selenium">
+            <img class="skills__svg-grid-item" src="./Oleh Kutafin_files/selenium.svg" alt="selenium">
+        </div>
+        <div class="skills__svg-grid-item playwright">
+            <svg class="skills__svg-grid-item playwright" viewBox="0 0 256 192">
+                <path fill="#2d4552" d="M84.38 108.352c-9.556 2.712-15.826 7.467-19.956 12.218c3.956-3.461 9.255-6.639 16.402-8.665c7.311-2.072 13.548-2.057 18.702-1.062v-4.03c-4.397-.402-9.437-.082-15.148 1.539M63.987 74.475l-35.49 9.35s.646.914 1.844 2.133l30.092-7.93s-.427 5.495-4.13 10.41c7.005-5.299 7.684-13.963 7.684-13.963m29.709 83.41c-49.946 13.452-76.37-44.43-84.37-74.472c-3.696-13.868-5.31-24.37-5.74-31.148a11.482 11.482 0 0 1 .025-1.84C1.021 50.58-.22 51.927.032 55.82c.43 6.773 2.044 17.275 5.74 31.147c7.997 30.038 34.424 87.92 84.37 74.468c10.871-2.929 19.038-8.263 25.17-15.073c-5.652 5.104-12.724 9.123-21.616 11.523M103.08 39.05v3.555h19.59c-.401-1.259-.806-2.393-1.208-3.555z"></path>
+                <path fill="#2d4552" d="M127.05 68.325c8.81 2.503 13.47 8.68 15.933 14.146l9.824 2.79s-1.34-19.132-18.645-24.047c-16.189-4.6-26.151 8.995-27.363 10.754c4.71-3.355 11.586-6.102 20.251-3.643m78.197 14.234c-16.204-4.62-26.162 9.003-27.356 10.737c4.713-3.351 11.586-6.099 20.247-3.629c8.797 2.506 13.452 8.676 15.923 14.146l9.837 2.8s-1.361-19.135-18.651-24.054m-9.76 50.443l-81.718-22.845s.885 4.485 4.279 10.293l68.803 19.234c5.664-3.277 8.636-6.682 8.636-6.682m-56.655 49.174C74.127 164.828 81.949 82.386 92.419 43.32c4.311-16.1 8.743-28.066 12.419-36.088c-2.193-.451-4.01.704-5.804 4.354C95.13 19.5 90.14 32.387 85.312 50.427c-10.467 39.066-18.29 121.506 46.412 138.854c30.497 8.17 54.256-4.247 71.966-23.749c-16.81 15.226-38.274 23.763-64.858 16.644"></path>
+                <path fill="#e2574c" d="M103.081 138.565v-16.637l-46.223 13.108s3.415-19.846 27.522-26.684c7.311-2.072 13.549-2.058 18.701-1.063V39.05h23.145c-2.52-7.787-4.958-13.782-7.006-17.948c-3.387-6.895-6.859-2.324-14.741 4.269c-5.552 4.638-19.583 14.533-40.698 20.222c-21.114 5.694-38.185 4.184-45.307 2.95c-10.097-1.742-15.378-3.96-14.884 3.721c.43 6.774 2.043 17.277 5.74 31.148c7.996 30.039 34.424 87.92 84.37 74.468c13.046-3.515 22.254-10.464 28.637-19.32h-19.256zm-74.588-54.74l35.494-9.35s-1.034 13.654-14.34 17.162c-13.31 3.504-21.154-7.812-21.154-7.812"></path>
+                <path fill="#2ead33" d="M236.664 39.84c-9.226 1.617-31.361 3.632-58.716-3.7c-27.363-7.328-45.517-20.144-52.71-26.168c-10.197-8.54-14.682-14.476-19.096-5.498c-3.902 7.918-8.893 20.805-13.723 38.846c-10.466 39.066-18.289 121.505 46.413 138.853c64.687 17.333 99.126-57.978 109.593-97.047c4.83-18.037 6.948-31.695 7.53-40.502c.665-9.976-6.187-7.08-19.29-4.784M106.668 72.161s10.196-15.859 27.49-10.943c17.305 4.915 18.645 24.046 18.645 24.046zm42.215 71.163c-30.419-8.91-35.11-33.167-35.11-33.167l81.714 22.846c0-.004-16.494 19.12-46.604 10.32m28.89-49.85s10.183-15.847 27.474-10.918c17.29 4.923 18.651 24.054 18.651 24.054z"></path>
+                <path fill="#d65348" d="m86.928 126.51l-30.07 8.522s3.266-18.609 25.418-25.983L65.25 45.147l-1.471.447c-21.115 5.694-38.185 4.184-45.307 2.95c-10.097-1.741-15.379-3.96-14.885 3.722c.43 6.774 2.044 17.276 5.74 31.147c7.997 30.039 34.425 87.92 84.37 74.468l1.471-.462zM28.493 83.825l35.494-9.351s-1.034 13.654-14.34 17.162c-13.31 3.504-21.154-7.811-21.154-7.811"></path>
+                <path fill="#1d8d22" d="m150.255 143.658l-1.376-.335c-30.419-8.91-35.11-33.166-35.11-33.166l42.137 11.778l22.308-85.724l-.27-.07c-27.362-7.329-45.516-20.145-52.71-26.17c-10.196-8.54-14.682-14.475-19.096-5.497c-3.898 7.918-8.889 20.805-13.719 38.846c-10.466 39.066-18.289 121.505 46.413 138.852l1.326.3zM106.668 72.16s10.196-15.859 27.49-10.943c17.305 4.915 18.645 24.046 18.645 24.046z"></path>
+                <path fill="#c04b41" d="m88.46 126.072l-8.064 2.289c1.906 10.74 5.264 21.047 10.534 30.152c.918-.202 1.828-.376 2.762-.632c2.449-.66 4.72-1.479 6.906-2.371c-5.89-8.74-9.785-18.804-12.137-29.438m-3.148-75.644c-4.144 15.467-7.852 37.73-6.831 60.06c1.826-.793 3.756-1.532 5.9-2.14l1.492-.334c-1.82-23.852 2.114-48.157 6.546-64.694a323.075 323.075 0 0 1 3.373-11.704a104.686 104.686 0 0 1-5.974 3.547a306.457 306.457 0 0 0-4.506 15.265"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item docker">
+            <svg class="skills__svg-grid-item docker" viewBox="0 0 48 48">
+                <path fill="#2395ec" d="M47.527,19.847c-0.13-0.102-1.345-1.007-3.908-1.007c-0.677,0.003-1.352,0.06-2.019,0.171 c-0.496-3.354-3.219-4.93-3.345-5.003l-0.688-0.392l-0.453,0.644c-0.567,0.866-1.068,1.76-1.311,2.763 c-0.459,1.915-0.18,3.713,0.806,5.25C35.417,22.928,33.386,22.986,33,23H1.582c-0.826,0.001-1.496,0.66-1.501,1.474 c-0.037,2.733,0.353,5.553,1.306,8.119c1.089,2.818,2.71,4.894,4.818,6.164C8.567,40.184,12.405,41,16.756,41 c1.965,0.006,3.927-0.169,5.859-0.524c2.686-0.487,5.271-1.413,7.647-2.74c1.958-1.119,3.72-2.542,5.219-4.215 c2.505-2.798,3.997-5.913,5.107-8.682c0.149,0,0.298,0,0.442,0c2.743,0,4.429-1.083,5.359-1.99 c0.618-0.579,1.101-1.284,1.414-2.065L48,20.216L47.527,19.847z"></path>
+                <path fill="#2395ec" d="M8,22H5c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C9,21.552,8.552,22,8,22z"></path>
+                <path fill="#2395ec" d="M14,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C15,21.552,14.552,22,14,22z"></path>
+                <path fill="#2395ec" d="M20,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C21,21.552,20.552,22,20,22z"></path>
+                <path fill="#2395ec" d="M26,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C27,21.552,26.552,22,26,22z"></path>
+                <path fill="#2395ec" d="M14,16h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C15,15.552,14.552,16,14,16z"></path>
+                <path fill="#2395ec" d="M20,16h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C21,15.552,20.552,16,20,16z"></path>
+                <path fill="#2395ec" d="M26,16h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C27,15.552,26.552,16,26,16z"></path>
+                <path fill="#2395ec" d="M26,10h-3c-0.552,0-1-0.448-1-1V6c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C27,9.552,26.552,10,26,10z"></path>
+                <path fill="#2395ec" d="M32,22h-3c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1h3c0.552,0,1,0.448,1,1v3 C33,21.552,32.552,22,32,22z"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item github">
+            <svg class="skills__svg-grid-item github " fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item gitlab">
+            <svg class="skills__svg-grid-item gitlab" viewBox="0 0 48 48">
+                <path fill="#e53935" d="M24 43L16 20 32 20z"></path>
+                <path fill="#ff7043" d="M24 43L42 20 32 20z"></path>
+                <path fill="#e53935" d="M37 5L42 20 32 20z"></path>
+                <path fill="#ffa726" d="M24 43L42 20 45 28z"></path>
+                <path fill="#ff7043" d="M24 43L6 20 16 20z"></path>
+                <path fill="#e53935" d="M11 5L6 20 16 20z"></path>
+                <path fill="#ffa726" d="M24 43L6 20 3 28z"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item html">
+            <svg class="skills__svg-grid-item html" viewBox="0 0 48 48">
+                <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
+                <path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item css">
+            <svg class="skills__svg-grid-item css" viewBox="0 0 48 48">
+                <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path>
+                <path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item kotlin">
+            <svg class="skills__svg-grid-item kotlin" viewBox="0 0 48 48">
+                <polygon fill="#0d91d6" points="24,6 17.99,12.35 11.97,18.69 6,25 6,6"></polygon>
+                <polygon fill="#f88909" points="24,6 23.96,6 17.97,12.33 11.96,18.68 6,24.97 6,25 6,25.09 6,42 14.69,33.31 20.87,27.13 27.06,20.94 33.25,14.75 42,6"></polygon>
+                <polygon fill="#c757bc" points="14.69,33.31 6,42 6,25.09"></polygon>
+                <polygon fill="#d3638f" points="20.87,27.13 14.69,33.31 6,25.09 6,25 11.97,18.69"></polygon>
+                <polygon fill="#e07063" points="27.06,20.94 20.87,27.13 11.97,18.69 17.99,12.35"></polygon>
+                <polygon fill="#ec7d36" points="33.25,14.75 27.06,20.94 17.99,12.35 24,6"></polygon>
+                <polygon fill="#f88909" points="42,6 33.25,14.75 24,6"></polygon>
+                <polygon fill="#0095d5" points="11.51,19.15 7.99,22.88 6,21 6,13.94"></polygon>
+                <polygon fill="#2b88da" points="15.03,15.42 11.51,19.15 6,13.94 6,6.87"></polygon>
+                <polygon fill="#557bde" points="18.56,11.7 15.03,15.42 6,6.87 6,6 12.53,6"></polygon>
+                <polygon fill="#806ee3" points="22.08,7.97 18.56,11.7 12.53,6 24,6"></polygon>
+                <polygon fill="#0095d5" points="23,25 6,42 9.35,42 17.52,42 40,42"></polygon>
+                <polygon fill="#2b88da" points="25.68,42 17.52,42 11.76,36.25 15.84,32.17"></polygon>
+                <polygon fill="#557bde" points="33.86,42 25.68,42 15.84,32.17 19.92,28.09"></polygon>
+                <polygon fill="#806ee3" points="42,42 33.86,42 19.92,28.09 24,24"></polygon>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item mongodb">
+            <svg class="skills__svg-grid-item mongodb" viewBox="0 0 48 48">
+                <path fill="#5d4037" d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z"></path>
+                <path fill="#4caf50" d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z"></path>
+                <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
+                <path fill="#4caf50" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z"></path>
+                <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item redis">
+            <svg class="skills__svg-grid-item redis" viewBox="0 0 48 48">
+                <path fill="#b71c1c" d="M45,29.316c0-0.637-1.686-1.153-3.769-1.153c-1.812,0-3.32,0.391-3.683,0.911	c-3.586-1.694-7.173-3.388-10.759-5.083c-1.248-0.59-2.673-0.584-3.918,0.014c-3.818,1.837-7.636,3.674-11.454,5.511	c-0.864-0.126-1.907-0.201-3.032-0.201C5.408,29.316,3,29.832,3,30.469v3.46c0,0.033,0.033,0.064,0.045,0.096	c-0.146,0.555,0.07,1.205,0.649,1.478c5.641,2.665,11.281,5.329,16.922,7.994c1.432,0.677,3.068,0.671,4.496-0.016	c6.442-3.1,12.884-6.199,19.327-9.299c0.484-0.233,0.651-0.786,0.509-1.247C44.971,32.882,45,32.83,45,32.775V29.316z"></path>
+                <path fill="#e53935" d="M20.616,39.158c-5.641-2.522-11.281-5.044-16.922-7.566c-0.922-0.412-0.926-1.727-0.007-2.146	c6.395-2.912,12.789-5.824,19.184-8.736c1.244-0.567,2.67-0.572,3.918-0.014c5.881,2.63,11.763,5.259,17.644,7.889	c0.754,0.337,0.758,1.414,0.006,1.756c-6.442,2.934-12.884,5.868-19.327,8.801C23.684,39.792,22.048,39.798,20.616,39.158z"></path>
+                <path fill="#b71c1c" d="M45,21.675c0-0.637-1.686-1.153-3.769-1.153c-1.812,0-3.32,0.391-3.683,0.911	c-3.586-1.694-7.173-3.388-10.759-5.083c-1.248-0.59-2.673-0.584-3.918,0.014c-3.818,1.837-7.636,3.674-11.454,5.511	c-0.864-0.126-1.907-0.201-3.032-0.201C5.408,21.675,3,22.192,3,22.829v3.46c0,0.033,0.033,0.064,0.045,0.096	c-0.146,0.555,0.07,1.205,0.649,1.478c5.641,2.665,11.281,5.329,16.922,7.994c1.432,0.677,3.068,0.671,4.496-0.016	c6.442-3.1,12.884-6.199,19.327-9.299c0.484-0.233,0.651-0.786,0.509-1.247C44.971,25.242,45,25.19,45,25.135V21.675z"></path>
+                <path fill="#e53935" d="M20.616,31.517c-5.641-2.522-11.281-5.044-16.922-7.566c-0.922-0.412-0.926-1.727-0.007-2.146	c6.395-2.912,12.789-5.824,19.184-8.736c1.244-0.567,2.67-0.572,3.918-0.014c5.881,2.63,11.763,5.259,17.644,7.889	c0.754,0.337,0.758,1.414,0.006,1.756c-6.442,2.934-12.884,5.868-19.327,8.801C23.684,32.152,22.048,32.158,20.616,31.517z"></path>
+                <path fill="#b71c1c" d="M45,14.035c0-0.637-1.686-1.153-3.769-1.153c-1.812,0-3.32,0.391-3.683,0.911	c-3.586-1.694-7.173-3.388-10.759-5.083c-1.248-0.59-2.673-0.584-3.918,0.014c-3.818,1.837-7.636,3.674-11.454,5.511	c-0.864-0.126-1.907-0.201-3.032-0.201C5.408,14.035,3,14.551,3,15.188v3.46c0,0.033,0.033,0.064,0.045,0.096	c-0.146,0.555,0.07,1.205,0.649,1.478c5.641,2.665,11.281,5.329,16.922,7.994c1.432,0.677,3.068,0.671,4.496-0.016	c6.442-3.1,12.884-6.199,19.327-9.299c0.484-0.233,0.651-0.786,0.509-1.247C44.971,17.601,45,17.549,45,17.494V14.035z"></path>
+                <path fill="#e53935" d="M20.616,23.877c-5.641-2.522-11.281-5.044-16.922-7.566c-0.922-0.412-0.926-1.727-0.007-2.146	c6.395-2.912,12.789-5.824,19.184-8.736c1.244-0.567,2.67-0.572,3.918-0.014c5.881,2.63,11.763,5.259,17.644,7.889	c0.754,0.337,0.758,1.414,0.006,1.756c-6.442,2.934-12.884,5.868-19.327,8.801C23.684,24.512,22.048,24.517,20.616,23.877z"></path>
+                <path fill="#fff" d="M18.748,14.741c-0.002,1.042-2.762,2.057-5.093,2.086c-2.419,0.03-5.273-0.993-5.282-2.051	c-0.009-1.061,2.842-2.161,5.311-2.135C16.017,12.665,18.751,13.703,18.748,14.741z"></path>
+                <path fill="#fff" d="M17.038,18.471c2.393,1.022,4.785,2.045,7.178,3.067c1.054-1.56,2.108-3.12,3.162-4.68	C23.931,17.396,20.485,17.934,17.038,18.471z"></path>
+                <path fill="#fff" d="M21.86,9.775c-1.101,0.401-2.203,0.801-3.304,1.202c1.507,0.132,3.015,0.264,4.522,0.395	c0.48,0.796,0.959,1.592,1.439,2.387c0.295-0.722,0.59-1.444,0.885-2.166c1.286-0.1,2.572-0.2,3.858-0.3	c-0.997-0.419-1.994-0.839-2.991-1.259c0.254-0.608,0.508-1.216,0.762-1.825c-0.97,0.29-1.939,0.58-2.909,0.87	c-1.07-0.422-2.14-0.843-3.21-1.265C21.228,8.468,21.544,9.122,21.86,9.775z"></path>
+                <path fill="#b71c1c" d="M27.267,14.619c2.271-0.906,4.543-1.813,6.814-2.719c1.962,0.834,3.924,1.668,5.886,2.502	c-2.202,0.876-4.403,1.752-6.605,2.629C31.331,16.226,29.299,15.423,27.267,14.619z"></path>
+                <path fill="#a01c1c" d="M34.082,11.963c-0.005,1.596-0.01,3.191-0.015,4.787c1.967-0.783,3.934-1.565,5.901-2.348	C38.006,13.589,36.044,12.776,34.082,11.963z"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item git">
+            <svg class="skills__svg-grid-item git" viewBox="0 0 48 48">
+                <path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"></path>
+            </svg>
+        </div>
+        <div class="skills__svg-grid-item appium">
+            <img class="skills__svg-grid-item appium" src="./Oleh Kutafin_files/appium-svgrepo-com(1).svg" alt="">
+        </div>
+    </div>
+</section>
+<footer class="footer container section">
+    <h3 class="footer__title">Oleh Kutafin</h3>
+    <div class="footer__public-profiles">
+        <a href="https://github.com/Qoopi">
+            <svg class="footer__github icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/okutafin/">
+            <svg class="footer__linkedin icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"></path>
+                <path d="M7.2 8.809H4V19.5h3.2V8.809Z"></path>
+            </svg>
+        </a>
+        <a href="https://www.facebook.com/okutafin">
+            <svg class="footer__facebook icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+        <a href="https://t.me/okutafin">
+            <svg class="footer__telegram icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 64 64">
+                <path d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 41.941 41.941 50 32 50 C 22.059 50 14 41.941 14 32 C 14 22.059 22.059 14 32 14 z M 41.041016 23.337891 C 40.533078 23.279297 39.894891 23.418531 39.181641 23.675781 C 37.878641 24.145781 21.223719 31.217953 20.261719 31.626953 C 19.350719 32.014953 18.487328 32.437828 18.486328 33.048828 C 18.486328 33.478828 18.741312 33.721656 19.445312 33.972656 C 20.177313 34.234656 22.023281 34.79275 23.113281 35.09375 C 24.163281 35.38275 25.357344 35.130844 26.027344 34.714844 C 26.736344 34.273844 34.928625 28.7925 35.515625 28.3125 C 36.102625 27.8325 36.571797 28.448688 36.091797 28.929688 C 35.611797 29.410688 29.988094 34.865094 29.246094 35.621094 C 28.346094 36.539094 28.985844 37.490094 29.589844 37.871094 C 30.278844 38.306094 35.239328 41.632016 35.986328 42.166016 C 36.733328 42.700016 37.489594 42.941406 38.183594 42.941406 C 38.877594 42.941406 39.242891 42.026797 39.587891 40.966797 C 39.992891 39.725797 41.890047 27.352062 42.123047 24.914062 C 42.194047 24.175062 41.960906 23.683844 41.503906 23.464844 C 41.365656 23.398594 41.210328 23.357422 41.041016 23.337891 z"></path>
+            </svg>
+        </a>
+        <a href="https://wa.me/+12133938496">
+            <svg class="footer__whatsapp icon" width="24" height="24" fill="currentColor" viewBox="0 0 50 50">
+                <path d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 29.079097 3.1186875 32.88588 4.984375 36.208984 L 2.0371094 46.730469 A 1.0001 1.0001 0 0 0 3.2402344 47.970703 L 14.210938 45.251953 C 17.434629 46.972929 21.092591 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 21.278025 46 17.792121 45.029635 14.761719 43.333984 A 1.0001 1.0001 0 0 0 14.033203 43.236328 L 4.4257812 45.617188 L 7.0019531 36.425781 A 1.0001 1.0001 0 0 0 6.9023438 35.646484 C 5.0606869 32.523592 4 28.890107 4 25 C 4 13.390466 13.390466 4 25 4 z M 16.642578 13 C 16.001539 13 15.086045 13.23849 14.333984 14.048828 C 13.882268 14.535548 12 16.369511 12 19.59375 C 12 22.955271 14.331391 25.855848 14.613281 26.228516 L 14.615234 26.228516 L 14.615234 26.230469 C 14.588494 26.195329 14.973031 26.752191 15.486328 27.419922 C 15.999626 28.087653 16.717405 28.96464 17.619141 29.914062 C 19.422612 31.812909 21.958282 34.007419 25.105469 35.349609 C 26.554789 35.966779 27.698179 36.339417 28.564453 36.611328 C 30.169845 37.115426 31.632073 37.038799 32.730469 36.876953 C 33.55263 36.755876 34.456878 36.361114 35.351562 35.794922 C 36.246248 35.22873 37.12309 34.524722 37.509766 33.455078 C 37.786772 32.688244 37.927591 31.979598 37.978516 31.396484 C 38.003976 31.104927 38.007211 30.847602 37.988281 30.609375 C 37.969311 30.371148 37.989581 30.188664 37.767578 29.824219 C 37.302009 29.059804 36.774753 29.039853 36.224609 28.767578 C 35.918939 28.616297 35.048661 28.191329 34.175781 27.775391 C 33.303883 27.35992 32.54892 26.991953 32.083984 26.826172 C 31.790239 26.720488 31.431556 26.568352 30.914062 26.626953 C 30.396569 26.685553 29.88546 27.058933 29.587891 27.5 C 29.305837 27.918069 28.170387 29.258349 27.824219 29.652344 C 27.819619 29.649544 27.849659 29.663383 27.712891 29.595703 C 27.284761 29.383815 26.761157 29.203652 25.986328 28.794922 C 25.2115 28.386192 24.242255 27.782635 23.181641 26.847656 L 23.181641 26.845703 C 21.603029 25.455949 20.497272 23.711106 20.148438 23.125 C 20.171937 23.09704 20.145643 23.130901 20.195312 23.082031 L 20.197266 23.080078 C 20.553781 22.728924 20.869739 22.309521 21.136719 22.001953 C 21.515257 21.565866 21.68231 21.181437 21.863281 20.822266 C 22.223954 20.10644 22.02313 19.318742 21.814453 18.904297 L 21.814453 18.902344 C 21.828863 18.931014 21.701572 18.650157 21.564453 18.326172 C 21.426943 18.001263 21.251663 17.580039 21.064453 17.130859 C 20.690033 16.232501 20.272027 15.224912 20.023438 14.634766 L 20.023438 14.632812 C 19.730591 13.937684 19.334395 13.436908 18.816406 13.195312 C 18.298417 12.953717 17.840778 13.022402 17.822266 13.021484 L 17.820312 13.021484 C 17.450668 13.004432 17.045038 13 16.642578 13 z M 16.642578 15 C 17.028118 15 17.408214 15.004701 17.726562 15.019531 C 18.054056 15.035851 18.033687 15.037192 17.970703 15.007812 C 17.906713 14.977972 17.993533 14.968282 18.179688 15.410156 C 18.423098 15.98801 18.84317 16.999249 19.21875 17.900391 C 19.40654 18.350961 19.582292 18.773816 19.722656 19.105469 C 19.863021 19.437122 19.939077 19.622295 20.027344 19.798828 L 20.027344 19.800781 L 20.029297 19.802734 C 20.115837 19.973483 20.108185 19.864164 20.078125 19.923828 C 19.867096 20.342656 19.838461 20.445493 19.625 20.691406 C 19.29998 21.065838 18.968453 21.483404 18.792969 21.65625 C 18.639439 21.80707 18.36242 22.042032 18.189453 22.501953 C 18.016221 22.962578 18.097073 23.59457 18.375 24.066406 C 18.745032 24.6946 19.964406 26.679307 21.859375 28.347656 C 23.05276 29.399678 24.164563 30.095933 25.052734 30.564453 C 25.940906 31.032973 26.664301 31.306607 26.826172 31.386719 C 27.210549 31.576953 27.630655 31.72467 28.119141 31.666016 C 28.607627 31.607366 29.02878 31.310979 29.296875 31.007812 L 29.298828 31.005859 C 29.655629 30.601347 30.715848 29.390728 31.224609 28.644531 C 31.246169 28.652131 31.239109 28.646231 31.408203 28.707031 L 31.408203 28.708984 L 31.410156 28.708984 C 31.487356 28.736474 32.454286 29.169267 33.316406 29.580078 C 34.178526 29.990889 35.053561 30.417875 35.337891 30.558594 C 35.748225 30.761674 35.942113 30.893881 35.992188 30.894531 C 35.995572 30.982516 35.998992 31.07786 35.986328 31.222656 C 35.951258 31.624292 35.8439 32.180225 35.628906 32.775391 C 35.523582 33.066746 34.975018 33.667661 34.283203 34.105469 C 33.591388 34.543277 32.749338 34.852514 32.4375 34.898438 C 31.499896 35.036591 30.386672 35.087027 29.164062 34.703125 C 28.316336 34.437036 27.259305 34.092596 25.890625 33.509766 C 23.114812 32.325956 20.755591 30.311513 19.070312 28.537109 C 18.227674 27.649908 17.552562 26.824019 17.072266 26.199219 C 16.592866 25.575584 16.383528 25.251054 16.208984 25.021484 L 16.207031 25.019531 C 15.897202 24.609805 14 21.970851 14 19.59375 C 14 17.077989 15.168497 16.091436 15.800781 15.410156 C 16.132721 15.052495 16.495617 15 16.642578 15 z"></path>
+            </svg>
+        </a>
+    </div>
+</footer>
+<script type="module" src="./Oleh Kutafin_files/main.js"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
