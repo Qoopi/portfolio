@@ -1,13 +1,20 @@
 .about {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
     gap: 1rem;
 }
 
-.about__content {
+.about__info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.about__info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .about__title {
@@ -30,35 +37,97 @@
     color: var(--clr-slate400);
 }
 
-.about__ul-container {
-    display: flex;
+.about__svg-gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas:
+      'dotnet dotnet dotnet java java js js docker docker' 
+      'dotnet dotnet dotnet java java js js docker docker'
+      'dotnet dotnet dotnet kotlin selenium  ts react mongodb redis'
+      'git github gitlab playwright appium html css . .';
+    place-items: center;
 }
 
-.about__ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    list-style: '\1F44D';
-    padding-left: 2.5em;
-    flex: 1;
+.about__svg-grid-item {
+    width: 100%;
+    height: 100%;
 }
 
-.about__ul__item {
-    font-size: var(--size-s);
-    color: var(--clr-slate600);
+.dotnet {
+    grid-area: dotnet;
 }
 
-.about__ul__item::before {
-    content: '';
-    margin-left: 0.5em;
+.java {
+    grid-area: java;
 }
+
+.js {
+    grid-area: js;
+}
+
+.ts {
+    grid-area: ts;
+}
+
+.react {
+    grid-area: react;
+}
+
+.selenium {
+    grid-area: selenium;
+}
+
+.playwright {
+    grid-area: playwright;
+}
+
+.docker {
+    grid-area: docker;
+}
+
+.github {
+    grid-area: github;
+}
+
+.gitlab {
+    grid-area: gitlab;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.kotlin {
+    grid-area: kotlin;
+}
+
+.mongodb {
+    grid-area: mongodb;
+}
+
+.redis {
+    grid-area: redis;
+}
+
+.git {
+    grid-area: git;
+}
+.appium {
+    grid-area: appium;
+}
+
 
 @media (min-width: 475px) {
     .about {
         gap: 1.5rem;
     }
 
-    .about__content {
+    .about__info {
         gap: 1.5rem;
     }
 
@@ -118,7 +187,7 @@
 }
 
 @media (min-width: 1280px) {
-    .about__content {
+    .about__info {
         gap: 2rem;
     }
 

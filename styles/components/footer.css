@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--size-xxs);
+    margin-bottom: 1rem;
 }
 .footer__title {
     font-size: var(--size-xs);
