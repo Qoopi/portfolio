@@ -149,15 +149,7 @@
     }
 }
 
-@media (min-width: 640px) {
-    .about__image-wrapper {
-        margin: 0 auto;
-    }
-
-    .about__img {
-        width: 28.6875rem;
-    }
-}
+/*@media (min-width: 640px) {  }*/
 
 /*@media (min-width: 768px) { }*/
 
