@@ -90,7 +90,7 @@
     .about {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .about__title {
@@ -134,8 +134,8 @@
         font-size: var(--size-xl);
     }
 
-    .about__img {
-        width: 30.75rem;
+    .about__photo {
+        width: 60%;
     }
 }
 
