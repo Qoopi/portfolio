@@ -2,7 +2,6 @@
     display: inline-block;
     font-weight: 600;
     text-decoration: none;
-    letter-spacing: -0.05em;
     background-color: var(--clr-rose);
     color: #f1f5f9;
     padding: 0.5em 1em;
@@ -20,6 +19,12 @@
     0 0 100px -10px var(--clr-rose);
 }
 
+.icon {
+    color: var(--clr-light);
+    margin: 0 0.5em;
+    transition: color 0.3s;
+}
+
 .container {
     width: 100%;
     margin-left: auto;
@@ -29,7 +34,7 @@
 }
 
 .section {
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 @media (min-width: 475px) {

@@ -1,0 +1,216 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills__info-section {
+    background-color: var(--clr-text-backgroud);
+    border-radius: 8px;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skills__title {
+    font-size: var(--size-2xl);
+    margin-bottom: 1rem;
+}
+
+.skills__subtitle {
+    font-size: var(--size-base);
+    color: var(--clr-slate400);
+}
+
+.skills__description {
+    max-width: 80ch;
+    font-size: var(--size-xs);
+    color: var(--clr-slate600);
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.skills__icon-section {
+    display: none;
+}
+
+.skills__svg-gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas:
+      'dotnet dotnet dotnet java java js js docker docker' 
+      'dotnet dotnet dotnet java java js js docker docker'
+      'dotnet dotnet dotnet kotlin selenium  ts react mongodb redis'
+      'git github gitlab playwright appium html css . .';
+    place-items: center;
+}
+
+.skills__svg-grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+.dotnet {
+    grid-area: dotnet;
+}
+
+.java {
+    grid-area: java;
+}
+
+.js {
+    grid-area: js;
+}
+
+.ts {
+    grid-area: ts;
+}
+
+.react {
+    grid-area: react;
+}
+
+.selenium {
+    grid-area: selenium;
+}
+
+.playwright {
+    grid-area: playwright;
+}
+
+.docker {
+    grid-area: docker;
+}
+
+.github {
+    grid-area: github;
+}
+
+.gitlab {
+    grid-area: gitlab;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.kotlin {
+    grid-area: kotlin;
+}
+
+.mongodb {
+    grid-area: mongodb;
+}
+
+.redis {
+    grid-area: redis;
+}
+
+.git {
+    grid-area: git;
+}
+
+.appium {
+    grid-area: appium;
+}
+
+@media (min-width: 475px) {
+    .skills {
+        gap: 1.5rem;
+    }
+
+    .skills__info-section {
+        gap: 1rem;
+    }
+
+    .skills__title {
+        font-size: var(--size-2xl);
+    }
+
+    .skills__description {
+        font-size: var(--size-s);
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-s);
+    }
+}
+
+@media (min-width: 640px) {
+    .skills__title {
+        font-size: var(--size-4xl);
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-l);
+    }
+
+    .skills__description {
+        font-size: var(--size-l);
+    }
+}
+
+@media (min-width: 768px) {
+    .skills__svg-gird {
+       display: none;
+    }
+    .skills__icon-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills__title {
+        font-size: var(--size-4xl);
+    }
+
+    .skills__description {
+        font-size: var(--size-l);
+        line-height: 1.4em;
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-l);
+    }
+}
+
+@media (min-width: 1280px) {
+    .skills__title {
+        font-size: var(--size-5xl);
+    }
+
+    .skills__description {
+        max-width: 150ch;
+        font-size: var(--size-xl);
+    }
+
+    .skills__subtitle {
+        font-size: var(--size-xl);
+    }
+}
+
+/*@media (min-width: 1536px) { }*/
